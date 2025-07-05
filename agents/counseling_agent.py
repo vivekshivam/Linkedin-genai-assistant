@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
-
+os.environ.get("OPENAI_API_KEY")
 llm = ChatOpenAI(model="gpt-4o", temperature=0.3)
 
 def career_counseling(jobfit_result):
